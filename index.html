@@ -11,13 +11,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="path/to/styles.css">
     <script defer src="script.js"></script>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clrprimary: '#79A76C',
+                        clifford: '#da373d',
+                        clrsecondary: '#1F231F',
+                        clrneutral: '#FFFFFF',
+                        clrneutral2: '#C2C2C2',
+                        clrtext: '#121212',
+                        clrtext2: '#646B6A',
+                    }
+                }
+            }
+        }
+    </script> -->
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"> <a href="index.html"><img src="images/wallet.png" alt="Wise_logo">WiseWallet</a> </div>
+            <div class="logo"><a href="index.html"><img src="images/wallet.png" alt="Wise_logo">WiseWallet</a> </div>
             <ul class="nav_center">
                 <li class="nav--links"> <a href="#"> Home</a></li>
                 <li class="nav--links"><a href="#"> Features</a></li>
@@ -34,7 +53,7 @@
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </div>
         </nav>
-        <section class="intro--section">
+         <section class="intro--section">
             <div class="intro--section-main">
                 <div class="intro--section--text">
                     <p class="spend--text">Spend wisely</p>
@@ -47,9 +66,15 @@
                     </div>
                 </div>
                 <div class="intro--images">
-                    <img src="images/cashback.png" alt="" class="intro--1">
-                    <img src="images/Frame 313909 1.png" alt="" class="intro--2">
-                    <img src="images/Group 1000001665.png" alt="" class="intro--3">
+                    <div class="intro--1">
+                        <img src="images/cashback.png" alt="">
+                    </div>
+                    <div class="intro--2">
+                        <img src="images/Frame 313909 1.png" alt="">
+                    </div>
+                    <div class="intro--3">
+                        <img src="images/Group 1000001665.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="section-info">
@@ -59,62 +84,68 @@
                     <li>$280+ <span>Transaction</span></li>
                 </ul>
             </div>
-        </section>
+        </section> 
     </header>
-    <section class="choose">
-    <p class="choose--head">Why Choose us</p>
-    <p class="choose--main">"Our Revolutionary App Makes it Easy to Save and Spend Wisely, Helping You Reach Your Financial Goals. Choose Us to
-    Transform Your Financial Habits and Achieve Success."</p>
-    <div class="choose-grid">
-        <div class="choose--item">
-            <img src="images/headphones.png" alt="">
-            <div class="choose--item-text">
-                <p class="choose--item-text--head">24 hr Support</p>
-                <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits with 24/7 Support from Our Team"</p>
+    <!-- <section class="choose">
+        <p class="choose--head">Why Choose us</p>
+        <p class="choose--main">"Our Revolutionary App Makes it Easy to Save and Spend Wisely, Helping You Reach Your
+            Financial Goals. Choose Us to
+            Transform Your Financial Habits and Achieve Success."</p>
+        <div class="choose-grid">
+            <div class="choose--item">
+                <img src="images/headphones.png" alt="">
+                <div class="choose--item-text">
+                    <p class="choose--item-text--head">24 hr Support</p>
+                    <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform
+                        Your Habits with 24/7 Support from Our Team"</p>
+                </div>
             </div>
-        </div>
 
-        <div class="choose--item">
-            <img src="images/smartphone.png" alt="">
-            <div class="choose--item-text">
-                <p class="choose--item-text--head">24 hr Support</p>
-                <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits
-                    with 24/7 Support from Our Team"</p>
+            <div class="choose--item">
+                <img src="images/smartphone.png" alt="">
+                <div class="choose--item-text">
+                    <p class="choose--item-text--head">24 hr Support</p>
+                    <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform
+                        Your Habits
+                        with 24/7 Support from Our Team"</p>
+                </div>
             </div>
-        </div>
 
-        <div class="choose--item">
-            <img src="images/credit-card.png" alt="">
-            <div class="choose--item-text">
-                <p class="choose--item-text--head">24 hr Support</p>
-                <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits
-                    with 24/7 Support from Our Team"</p>
+            <div class="choose--item">
+                <img src="images/credit-card.png" alt="">
+                <div class="choose--item-text">
+                    <p class="choose--item-text--head">24 hr Support</p>
+                    <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform
+                        Your Habits
+                        with 24/7 Support from Our Team"</p>
+                </div>
             </div>
-        </div>
 
-        <div class="choose--item">
-            <img src="images/code (1).png" alt="">
-            <div class="choose--item-text">
-                <p class="choose--item-text--head">24 hr Support</p>
-                <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits
-                    with 24/7 Support from Our Team"</p>
+            <div class="choose--item">
+                <img src="images/code (1).png" alt="">
+                <div class="choose--item-text">
+                    <p class="choose--item-text--head">24 hr Support</p>
+                    <p class="choose--item-text--main">Achieve Financial Success with Our Revolutionary App" "Transform
+                        Your Habits
+                        with 24/7 Support from Our Team"</p>
+                </div>
             </div>
         </div>
-    </div>
     </section>
     <section class="manage">
         <div class="manage--text">
             <p class="manage--text--head">
                 Manage your money with ease
             </p>
-            <p class="manage-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits with 24/7 Support from Our Team"</p>
+            <p class="manage-text--main">Achieve Financial Success with Our Revolutionary App" "Transform Your Habits
+                with 24/7 Support from Our Team"</p>
             <a href="#">Get Started &RightArrow;</a>
         </div>
         <div class="manage-img">
             <img src="images/chart.png" alt="">
             <img src="images/card.png" alt="">
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
