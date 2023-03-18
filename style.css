@@ -50,9 +50,11 @@ header {
 }
 
 nav {
-    height: 10vh;
+    height: auto;
     display: block;
     padding: 1rem 0.5rem;
+    transition: 0.4s;
+    overflow: hidden;
 }
 
 .logo a {
@@ -78,13 +80,14 @@ nav {
     font-size: var(--fnt-16px);
     line-height: 30px;
     color: var(--clr-neutral-2);
-    transition: color 0.3s ease-in;
+    transition: all 0.2s ease-in;
 
 
 }
 
 .nav_center li a:hover {
     color: var(--clr-primary);
+    padding-left: 20px;
 }
 
 .nav_center li img {
@@ -163,6 +166,9 @@ nav {
         align-items: center;
         gap: 1rem;
     }
+        .nav_center li a:hover {
+            padding-left: 0px;
+        }
 
     .nav-end {
         display: block;
@@ -265,6 +271,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 3em 0;
         /* background-image: url(images/Group\ 1000001722.png), url(images/Group\ 1000001723.png);
         background-repeat: no-repeat, no-repeat;
         background-position: left, right; */
@@ -282,30 +289,31 @@ nav {
     .intro--images {
         display: block;
         position: relative;
+        /* width: 100%; */
     }
-
-    /*
-    .intro--images {
-        width: 50%;
-    }
-
+/*
     .intro--images img {
         width: 100%;
-    }
+    } */
 
     .intro--1 {
         position: absolute;
+        right: 0;
+        bottom: 5.5em;
+        z-index: 3;
     }
 
     .intro--2 {
         position: absolute;
-        top: 1px;
-        right: 2px;
+        right: 4em;
+        top: -6em;
     }
 
     .intro--3 {
         position: absolute;
-    } */
+        right: 23em;
+        
+    }
 }
 
 
@@ -367,6 +375,7 @@ nav {
 }
 
 .manage {
-    margin-top: 5rem;
+    margin: 5rem 0;
     text-align: center;
+    background-color: var(--clr-neutral-2);
 }
